@@ -11,17 +11,7 @@ interface DesktopItemProps {
   active?: boolean;
 };
 
-const SetPointerNoneInGlobalCSS = () => {
-  return (
-    <style jsx global>
-      {`
-        body {
-          pointer-events: none;
-       }
-      `}
-    </style>
-  );
-};
+
 
 const NavItem: React.FC<DesktopItemProps> = ({
   label,
@@ -30,11 +20,8 @@ const NavItem: React.FC<DesktopItemProps> = ({
   active
 }) => {
 
-  const [pointerNone, setpointerNone] = useState(false);
+ 
 
-  const handlePoninterEventNone = useCallback(()=>{
-    setpointerNone(true)
-  },[]);
 
   return (
 
@@ -58,12 +45,8 @@ const NavItem: React.FC<DesktopItemProps> = ({
       )}
     >
 
-      {pointerNone === true && (
-        <SetPointerNoneInGlobalCSS />
-      )}
 
       <Link
-        onClick={handlePoninterEventNone}
         title={label}
         href={href}
         className={clsx(`
