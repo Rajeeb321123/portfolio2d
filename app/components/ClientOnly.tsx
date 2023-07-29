@@ -93,9 +93,11 @@ const ClientOnly: React.FC<ClientOnlyProps> = ({ children, image, position1 = '5
         window.removeEventListener("mousemove", handleMouseMove);
       }
 
-  },[xValue, yValue, handleMouseMove])
+  },[handleMouseMove])
 
-  useEffect(() => {
+
+
+  useMemo(() => {
 
     if(hasMounted === false)
     {let timer1 = setTimeout(() => setHasMounted(true), 783);
