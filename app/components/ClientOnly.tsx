@@ -31,73 +31,69 @@ const ClientOnly: React.FC<ClientOnlyProps> = ({ children, image, position1 = '5
   const [hasMounted, setHasMounted] = useState(false);
 
   // for dynamically setting the background postion w.r.t mouse postion
-  // const [bgPostion1, setBgPostion1] = useState(position1);
+  const [bgPostion1, setBgPostion1] = useState(position1);
 
-  // // querySelector with .classname grab all the elememt with parallax className and put them in array of nodelist: we may maynot use it later on
-  // // to grab the body css class use: const body = docucment.body;
+  // querySelector with .classname grab all the elememt with parallax className and put them in array of nodelist: we may maynot use it later on
+  // to grab the body css class use: const body = docucment.body;
 
-  // // setting p1 as fixed value of bg position we already set in page.tsx so it can use later on
-  // // we dont need p2 here 
-  // const p1 = parseInt(position1);
+  // setting p1 as fixed value of bg position we already set in page.tsx so it can use later on
+  // we dont need p2 here 
+  const p1 = parseInt(position1);
 
-  // // x1 is just for placeholder var so we can compare and calculate later on , very imp for project
-  // let x1:number;
+  // x1 is just for placeholder var so we can compare and calculate later on , very imp for project
+  let x1:number;
 
-  // // mouse position
-  // let xValue:number = 0, yValue:number = 0;
+  // mouse position
+  let xValue:number = 0, yValue:number = 0;
 
-  // // for handling mouse mov
-  // const handleMouseMove = useCallback((e:MouseEvent) => {
-  //   const event = e as MouseEvent
+  // for handling mouse mov
+  const handleMouseMove = useCallback((e:MouseEvent) => {
+    const event = e as MouseEvent
 
-  //   // if we have set background position 0% 50%, it isnot ideal way as usecase isont flexible enough , but as we setting p1 as 0 or 50 it works fine for our project
-  //   if(p1 !== 0){
-  //     // initializing x and y value w.r.t center of screen
-  //     xValue = event.clientX - window.innerWidth/2;
-  //     yValue = event.clientY - window.innerHeight/2;
-  //   }
-  //   else{
-  //     // initializing x and y value of mouse to top left corner of screen 
-  //     xValue = event.clientX;
-  //     yValue = event.clientY;
-  //   }
+    // if we have set background position 0% 50%, it isnot ideal way as usecase isont flexible enough , but as we setting p1 as 0 or 50 it works fine for our project
+    if(p1 !== 0){
+      // initializing x and y value w.r.t center of screen
+      xValue = event.clientX - window.innerWidth/2;
+      yValue = event.clientY - window.innerHeight/2;
+    }
+    else{
+      // initializing x and y value of mouse to top left corner of screen 
+      xValue = event.clientX;
+      yValue = event.clientY;
+    }
     
-  //   // if ( x1 which is going to set as bgpostion1), if x1 or bgposition1 within 0 to 100
-  //   if((x1 > 0 && x1 < 100) || x1 === undefined ){
+    // if ( x1 which is going to set as bgpostion1), if x1 or bgposition1 within 0 to 100
+    if((x1 > 0 && x1 < 100) || x1 === undefined ){
 
-  //     x1 = p1 + xValue/10
-  //   }
+      x1 = p1 + xValue/10
+    }
 
-  //   //if x1 or bgposition1  not within 0 to 100
-  //   if(x1 <= 0 || x1 >= 100 ) {
-  //     if(x1<= 0){
-  //       x1 = 0.00001;
-  //     }
-  //     if(x1 >= 100){
-  //       x1 = 99.999;
-  //     }
-  //   }
+    //if x1 or bgposition1  not within 0 to 100
+    if(x1 <= 0 || x1 >= 100 ) {
+      if(x1<= 0){
+        x1 = 0.00001;
+      }
+      if(x1 >= 100){
+        x1 = 99.999;
+      }
+    }
 
     
-  //   setBgPostion1(x1.toString(10));
+    setBgPostion1(x1.toString(10));
 
-  // },[])
+  },[])
 
-  // useEffect(()=> {
+  useEffect(()=> {
 
-  //     if( hasMounted === true) {
 
-  //       window.addEventListener("mousemove", handleMouseMove)
+      window.addEventListener("mousemove", handleMouseMove)
+
+      return () => {
         
-  //       return () => {
-          
-  //         window.removeEventListener("mousemove", handleMouseMove);
-  //       }
-  //     }
+        window.removeEventListener("mousemove", handleMouseMove);
+      }
 
-  // },[handleMouseMove, hasMounted])
-
-
+  },[xValue, yValue, handleMouseMove])
 
   useMemo(() => {
 
@@ -121,7 +117,7 @@ const ClientOnly: React.FC<ClientOnlyProps> = ({ children, image, position1 = '5
     <>
       <BgTheme
         image={image}
-        position1={position1}
+        position1={bgPostion1}
         position2={position2}
       />
         {children}
