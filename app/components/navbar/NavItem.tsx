@@ -34,7 +34,7 @@ const NavItem: React.FC<DesktopItemProps> = ({
 
   const handlePoninterEventNone = useCallback(()=>{
     setpointerNone(true)
-  },[pointerNone]);
+  },[]);
 
   return (
 

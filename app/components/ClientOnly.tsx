@@ -97,7 +97,7 @@ const ClientOnly: React.FC<ClientOnlyProps> = ({ children, image, position1 = '5
         window.removeEventListener("mousemove", handleMouseMove);
       }
 
-  },[xValue, yValue])
+  },[xValue, yValue, handleMouseMove])
 
   useEffect(() => {
 
@@ -110,7 +110,7 @@ const ClientOnly: React.FC<ClientOnlyProps> = ({ children, image, position1 = '5
       clearTimeout(timer1);
     }}
 
-  }, []);
+  }, [hasMounted]);
 
   if (!hasMounted) {
     return null;

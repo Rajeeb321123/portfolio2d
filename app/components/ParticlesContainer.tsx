@@ -3,14 +3,13 @@
 import { Particles } from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import { useCallback } from 'react'
-import { Background, Engine } from 'tsparticles-engine';
-import { distance } from 'framer-motion';
+import {  Engine } from 'tsparticles-engine';
 
 const ParticlesContainer = () => {
 
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadFull(engine);
-  }, [loadFull]);
+  }, []);
 
   const particlesLoaded = useCallback(async () => { }, []);
   return (

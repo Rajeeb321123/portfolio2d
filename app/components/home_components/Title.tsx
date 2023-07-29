@@ -29,7 +29,7 @@ const Title = () => {
       >
         <span className="text-accent">
           Welcome,
-          <br /> I'm a{" "}
+          <br /> I&apos;m a{" "}
           <Image
             className="inline"
             alt="job"
