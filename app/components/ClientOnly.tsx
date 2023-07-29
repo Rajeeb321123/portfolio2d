@@ -3,7 +3,7 @@
 // used as wrapper to delay mount of dom 
 // for solving  error framer motion for  next js 13  as dom donot wait unitil the animation due to experimentel app folder in next js 13
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 
 interface ClientOnlyProps {
   children: React.ReactNode;
@@ -47,7 +47,7 @@ const ClientOnly: React.FC<ClientOnlyProps> = ({ children, image, position1 = '5
   let xValue:number = 0, yValue:number = 0;
 
   // for handling mouse mov
-  const handleMouseMove = (e:MouseEvent) => {
+  const handleMouseMove = useCallback((e:MouseEvent) => {
     const event = e as MouseEvent
 
     // if we have set background position 0% 50%, it isnot ideal way as usecase isont flexible enough , but as we setting p1 as 0 or 50 it works fine for our project
@@ -79,13 +79,9 @@ const ClientOnly: React.FC<ClientOnlyProps> = ({ children, image, position1 = '5
     }
 
     
-    setBgPostion1(x1.toString(10))
-    // setPo2(x1.toString(10))
-    console.log(x1)
+    setBgPostion1(x1.toString(10));
 
-    // for each of nodelist array
-
-  }
+  },[])
 
   useEffect(()=> {
 
