@@ -47,9 +47,9 @@ export default function RootLayout({
           <TopLeftImage />
           <Nav />
           <Header />
-          <PageTransition>
+
             {children}
-          </PageTransition>
+
         </div>
         </body>
     </html>
