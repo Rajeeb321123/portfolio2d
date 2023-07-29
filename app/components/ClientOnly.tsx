@@ -85,15 +85,17 @@ const ClientOnly: React.FC<ClientOnlyProps> = ({ children, image, position1 = '5
 
   useEffect(()=> {
 
+      if( hasMounted === true) {
 
-      window.addEventListener("mousemove", handleMouseMove)
-
-      return () => {
+        window.addEventListener("mousemove", handleMouseMove)
         
-        window.removeEventListener("mousemove", handleMouseMove);
+        return () => {
+          
+          window.removeEventListener("mousemove", handleMouseMove);
+        }
       }
 
-  },[handleMouseMove])
+  },[handleMouseMove, hasMounted])
 
 
 
