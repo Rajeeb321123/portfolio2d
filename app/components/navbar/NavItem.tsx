@@ -2,8 +2,7 @@
 
 import clsx from "clsx";
 import Link from "next/link";
-import { useCallback, useState } from "react";
-import {useRouter} from 'next/navigation';
+import { useCallback, useEffect, useState } from "react";
 
 interface DesktopItemProps {
   label: string;
@@ -31,14 +30,10 @@ const NavItem: React.FC<DesktopItemProps> = ({
   active
 }) => {
 
-  const router = useRouter();
   const [pointerNone, setpointerNone] = useState(false);
 
   const handlePoninterEventNone = useCallback(()=>{
-
-    setpointerNone(true);
-    router.push(href)
-    
+    setpointerNone(true)
   },[]);
 
   return (
@@ -67,9 +62,10 @@ const NavItem: React.FC<DesktopItemProps> = ({
         <SetPointerNoneInGlobalCSS />
       )}
 
-      <div
+      <Link
         onClick={handlePoninterEventNone}
         title={label}
+        href={href}
         className={clsx(`
           group
           flex
@@ -132,7 +128,7 @@ const NavItem: React.FC<DesktopItemProps> = ({
         <Icon className={clsx(" h-6 w-6 shrink-0 ", active && 'text-[#c43544]')} />
         {/* sr only make it visible in only server side rendering */}
         <span className="font-pixel text-xl sr-only ">{label}</span>
-      </div>
+      </Link>
 
     </div>
   )

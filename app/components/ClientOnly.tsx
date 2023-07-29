@@ -83,7 +83,7 @@ const ClientOnly: React.FC<ClientOnlyProps> = ({ children, image, position1 = '5
 
   },[])
 
-  useEffect(()=> {
+  useMemo(()=> {
 
 
       window.addEventListener("mousemove", handleMouseMove)
