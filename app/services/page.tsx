@@ -2,17 +2,17 @@
 
 import ClientOnly from "../components/ClientOnly"
 
-export const serviceData = [
-{
-    tilte: ' Full Stack Web Development',
-},
-{
-    tilte: 'FrontEnd Developer',
-},
-{
-    tilte: 'BackEnd Development',
-},
-]
+// export const serviceData = [
+// {
+//     tilte: ' Full Stack Web Development',
+// },
+// {
+//     tilte: 'FrontEnd Developer',
+// },
+// {
+//     tilte: 'BackEnd Development',
+// },
+// ]
 
 const Services = () => {
     return (
