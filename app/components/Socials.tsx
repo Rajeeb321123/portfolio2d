@@ -21,6 +21,7 @@ const Socials = () => {
       px-3
       rounded-xl
       border-black
+      bg-white/20
       "
     >
       <Link

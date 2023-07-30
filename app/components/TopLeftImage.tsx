@@ -21,7 +21,7 @@ const TopLeftImage = () => {
         absolute
         left-0
         top-0
-        z-10
+        z-[60]
         pointer-events-none
         w-[200px]
         xl:w-[400px]

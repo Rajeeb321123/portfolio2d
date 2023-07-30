@@ -12,8 +12,10 @@ const Circle = () => {
       w-[200px]
       xl:w-[300px] 
       absolute 
-      -right-2 
-      -bottom-2  
+      lg:-right-2 
+      lg:-bottom-2  
+      -right-20
+      -bottom-10
       animate-[pulse_5s_ease-in-out_infinite]
       z-[10] 
       "

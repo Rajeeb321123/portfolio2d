@@ -16,6 +16,7 @@ const Header = () => {
       px-16
       xl:px-0
       xl:h-[90px]
+      z-[50]
       "
     >
       <div 

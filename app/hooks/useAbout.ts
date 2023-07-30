@@ -45,11 +45,11 @@ const useAbout = () => {
               url: '/assets/webdev/react.png'
             },
             {
-              name: 'Express',
+              name: 'Express.js',
               url: '/assets/webdev/express.svg',
             },
             {
-              name: 'Node',
+              name: 'Node.js',
               url: '/assets/webdev/node.png',
             },
             {
@@ -82,16 +82,16 @@ const useAbout = () => {
               url: '/assets/nextjs/next.png',
             },
             {
-              name: 'Auth',
+              name: 'OAuth',
               url: '/assets/nextjs/auth.png',
             },
             {
-              name: 'Git',
+              name: 'Prisma',
               url: '/assets/nextjs/prisma.svg',
             },
             {
               name: 'pusher',
-              url: '/assets/nextjs/pusher.png',
+              url: '/assets/nextjs/pusher.jpg',
             },
           ],
         },
@@ -115,8 +115,8 @@ const useAbout = () => {
       title: 'credentials',
       info: [
         {
-          title: 'Bachelors in Computer Engineering  - Kathford Internation College, TU university',
-          stage: '2023',
+          title: 'Bachelors in Computer Engineering  - Kathford International College, TU university',
+          stage: 'July_2023',
         },
 
       ],

@@ -28,19 +28,31 @@ module.exports = {
         },
         waveA: {
           '0%, 100%': { transform: 'translateY(0rem)' },
-          '16.67%': { transform: 'translateY(0.4rem)' },
+          '16.67%': { transform: 'translateY(-0.4rem)' },
         },
         wave2: {
           '0%, 100%': { transform: 'translateX(0rem)' },
           '33.34%': { transform: 'translateX(0.4rem)' },
         },
+        waveB: {
+          '0%, 100%': { transform: 'translateY(0rem)' },
+          '33.34%': { transform: 'translateY(-0.4rem)' },
+        },
         wave3: {
           '0%, 100%': { transform: 'translateX(0rem)' },
           '50.01%': { transform: 'translateX(0.4rem)' },
         },
+        waveC: {
+          '0%, 100%': { transform: 'translateY(0rem)' },
+          '50.01%': { transform: 'translateY(-0.4rem)' },
+        },
         wave4: {
           '0%, 100%': { transform: 'translateX(0rem)' },
           '66.68%': { transform: 'translateX(0.4rem)' },
+        },
+        waveD: {
+          '0%, 100%': { transform: 'translateY(0rem)' },
+          '66.68%': { transform: 'translateY(-0.4rem)' },
         },
         wave5: {
           '0%': { transform: 'translateX(0rem)' },

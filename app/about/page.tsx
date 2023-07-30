@@ -40,6 +40,7 @@ const About = () => {
           flex-col
           items-center
           xl:flex-row
+          
           gap-x-6
           '
         >
