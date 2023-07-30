@@ -21,7 +21,6 @@ const BgTheme = ({ image, position1, position2 }: { image: string, position1: st
           background-image: ${image};
           background-position: ${position1}% ${position2}%;
           pointer-events: auto;
-          background-size: cover;
        }
       `}
     </style>
@@ -100,7 +99,7 @@ const ClientOnly: React.FC<ClientOnlyProps> = ({ children, image, position1 = '5
   useMemo(() => {
 
     if(hasMounted === false)
-    {let timer1 = setTimeout(() => setHasMounted(true), 783);
+    {let timer1 = setTimeout(() => setHasMounted(true), 1000);
 
     
 
@@ -117,15 +116,12 @@ const ClientOnly: React.FC<ClientOnlyProps> = ({ children, image, position1 = '5
 
   return (
     <>
-    <PageTransition>
-
       <BgTheme
         image={image}
         position1={bgPostion1}
         position2={position2}
         />
         {children}
-    </PageTransition>
     </>
   )
 }

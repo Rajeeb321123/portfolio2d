@@ -14,13 +14,9 @@ body,
   -webkit-transition: background-position 1000ms linear;
   -ms-transition: background-position 1000ms linear;
   transition: background-position 1000ms linear;
-  transition: background-color 1000ms linear;
-
-  background: url('/bg/door.jpg') no-repeat center center fixed;
-  background-size: 100% 100%;
+    
   cursor: url("/cursor.png"), auto;
   pointer-events: none;
-  
 }
 
 .parallax {

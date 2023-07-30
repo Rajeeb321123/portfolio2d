@@ -1,6 +1,7 @@
 'use client';
 
 import ClientOnly from "../components/ClientOnly"
+import PageTransition from "../components/PageTransition";
 
 // export const serviceData = [
 // {
@@ -16,9 +17,12 @@ import ClientOnly from "../components/ClientOnly"
 
 const Services = () => {
     return (
+        <PageTransition>
+
         <ClientOnly image={'url("/bg/skills.gif")'} >
         <div>Services</div>
         </ClientOnly>
+        </PageTransition>
     );
 };
   

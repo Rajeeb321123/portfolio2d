@@ -5,6 +5,7 @@
 import Avatar from '../components/Avatar';
 import Circle from '../components/Circle';
 import ClientOnly from '../components/ClientOnly';
+import PageTransition from '../components/PageTransition';
 import useAbout from '../hooks/useAbout';
 import AboutData from './components/AboutData';
 
@@ -18,16 +19,18 @@ const About = () => {
 
 
   return (
+    <PageTransition>
+
     <ClientOnly image={'url("/bg/about.gif")'} >
       <div
         className='
-          h-full
-          bg-primary/30
-          py-32
-          text-center
-          xl:text-left
+        h-full
+        bg-primary/30
+        py-32
+        text-center
+        xl:text-left
         '
-      >
+        >
         <Circle />
         <Avatar page='about' />
 
@@ -43,12 +46,13 @@ const About = () => {
           
           gap-x-6
           '
-        >
+          >
           {/* about data */}
           <AboutData />
         </div>
       </div>
     </ClientOnly>
+    </PageTransition>
   );
 };
 

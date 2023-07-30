@@ -5,14 +5,17 @@ import ProjectsBtn from "./components/ProjectsBtn";
 import Avatar from "./components/Avatar";
 import ClientOnly from "./components/ClientOnly";
 import Title from "./components/home_components/Title";
+import PageTransition from "./components/PageTransition";
 
 export default function Home() {
   return (
+
+    <PageTransition>
     <ClientOnly 
       image={'url("/bg/main_bg.gif")'}
       position1="0"
       position2="50"
-    >
+      >
 
     <div
       className="
@@ -52,14 +55,14 @@ export default function Home() {
         {/* images */}
         <div 
           className="
-            w-[1000px]
-            h-full 
-            absolute 
-            right-0 
-            bottom-0
-            pointer-events-none
+          w-[1000px]
+          h-full 
+          absolute 
+          right-0 
+          bottom-0
+          pointer-events-none
           "
-        >
+          >
           {/* particles */}
           <div className="">
             <ParticlesContainer />
@@ -69,5 +72,6 @@ export default function Home() {
         </div>
       </div>
     </ClientOnly>
+    </PageTransition>
   )
 }
