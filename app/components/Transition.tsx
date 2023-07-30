@@ -47,6 +47,8 @@ const Transition = () => {
         right-0
         w-screen
         z-30 
+
+        
         
         '
         variants={transitionVariant3}

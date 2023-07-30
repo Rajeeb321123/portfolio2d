@@ -99,7 +99,7 @@ const ClientOnly: React.FC<ClientOnlyProps> = ({ children, image, position1 = '5
   useMemo(() => {
 
     if(hasMounted === false)
-    {let timer1 = setTimeout(() => setHasMounted(true), 1000);
+    {let timer1 = setTimeout(() => setHasMounted(true), 610);
 
     
 

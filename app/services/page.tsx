@@ -18,10 +18,9 @@ import PageTransition from "../components/PageTransition";
 const Services = () => {
     return (
         <PageTransition>
-
-        <ClientOnly image={'url("/bg/skills.gif")'} >
-        <div>Services</div>
-        </ClientOnly>
+            <ClientOnly image={'url("/bg/skills.gif")'} >
+            <div>Services</div>
+            </ClientOnly>
         </PageTransition>
     );
 };
