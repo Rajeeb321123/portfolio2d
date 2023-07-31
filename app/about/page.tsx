@@ -1,19 +1,10 @@
-// 'use client';
-
-
 
 import Avatar from '../components/Avatar';
 import Circle from '../components/Circle';
 import ClientOnly from '../components/ClientOnly';
 import PageTransition from '../components/PageTransition';
-import useAbout from '../hooks/useAbout';
-import AboutData from './components/AboutData';
-
-// import Avatar from '../components/Avatar';
-// import Circle from '../components/Circle';
-// import { useState } from 'react';
-
-
+import LeftSide from './components/LeftSide';
+import RightSide from './components/RightSide';
 
 const About = () => {
 
@@ -48,7 +39,8 @@ const About = () => {
           '
           >
           {/* about data */}
-          <AboutData />
+          <LeftSide />
+          <RightSide />
         </div>
       </div>
     </ClientOnly>

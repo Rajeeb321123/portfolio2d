@@ -84,7 +84,7 @@ const Transition = () => {
         animate="animate"
         transition={{
           delay: 0.6,
-          duration: 0.6, 
+          duration: 1.5, 
           ease:'easeInOut'
         }}
       >
@@ -111,7 +111,7 @@ const Transition = () => {
         animate="animate"
         transition={{
           delay: 0.6,
-          duration: 0.6, 
+          duration: 1.5, 
           ease:'easeInOut'
         }}
       >

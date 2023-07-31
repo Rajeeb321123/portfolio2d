@@ -13,14 +13,14 @@ interface ClientOnlyProps {
   position2?: string;
 }
 
-const BgTheme = ({ image, position1, position2 }: { image: string, position1: string, position2: string, }) => {
+const BgTheme = ({ image, position1, position2 }: { image?: string, position1?: string, position2?: string, }) => {
   return (
     <style jsx global>
       {`
         body {
-          background-image: ${image};
-          background-position: ${position1}% ${position2}%;
-          pointer-events: auto;
+          ${image && `background-image: ${image};`}
+          ${position1 && position2 && `background-position: ${position1}% ${position2}%;`}
+          ${position1 && position2 && `pointer-events: auto;`}
        }
       `}
     </style>
@@ -99,7 +99,7 @@ const ClientOnly: React.FC<ClientOnlyProps> = ({ children, image, position1 = '5
   useMemo(() => {
 
     if(hasMounted === false)
-    {let timer1 = setTimeout(() => setHasMounted(true), 610);
+    {let timer1 = setTimeout(() => setHasMounted(true), 700);
 
     
 
@@ -110,18 +110,22 @@ const ClientOnly: React.FC<ClientOnlyProps> = ({ children, image, position1 = '5
   }, [hasMounted]);
 
   if (!hasMounted) {
-    return null;
+    return (
+      <BgTheme
+      image={image}
+    />
+    );
   }
 
 
   return (
     <>
       <BgTheme
-        image={image}
-        position1={bgPostion1}
-        position2={position2}
-        />
-        {children}
+      image={image}
+      position1={bgPostion1}
+      position2={position2}
+    />
+      {children}
     </>
   )
 }

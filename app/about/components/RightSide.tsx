@@ -1,101 +1,62 @@
 'use client';
 
 import { useState } from "react";
-
-import useAbout from "@/app/hooks/useAbout";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
-const AboutData = () => {
-    
+import { fadeIn } from "@/variants";
+import useAbout from "@/app/hooks/useAbout";
+import Counter from "./Counter";
+
+const RightSide = () => {
     const [index, setIndex] = useState(0)
     const about = useAbout();
     return (
-        <>
-            <div
-                className="
-                flex-1
-                p-2 
-                flex-col 
-                jusity-center 
-                my-2 
-                z-10 
-                rounded-2xl
-                
-                "
-            >
-                <h2 
-                    className="
-                    text-2xl  
-                    md:text-[30px] 
-                    md:leading-[1.3]  
-                    font-semibold
-                    
-                    "
-                >
-                    <div className=" inline-block">My</div>&nbsp;
-                    <div className="text-accent animate-[waveC_2s_ease-in-out_2] inline-block border-2  border-accent/20 rounded-xl px-1 shadow-sm shadow-accent">Web</div>
-                    &nbsp;
-                    <div className="inline-block">Development&nbsp;</div> 
-                    <div className="text-blue-400 animate-[waveC_2s_ease-in-out_2] inline-block border-2 border-blue-400 shadow-sm rounded-2xl px-1 shadow-blue-400">Journey</div>
-                </h2>
-                <p 
-                    className="
-                    hidden
-                    xl:block
-                    max-w-[500px]
-                    xl:mx-0
-                    mb-6
-                    xl:mb-2
-                    px-2
-                    xl:px-0
-                    "
-                >
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus et assumenda doloribus suscipit ea fugiat, facilis corrupti commodi ipsa enim magni architecto accusamus laborum corporis esse magnam placeat sed expedita? Voluptatibus officiis ad cupiditate.
-                </p>
-            </div>
-
-            <div
-                className="
+        <motion.div
+            variants={fadeIn('left',0.4)}
+            initial='hidden'
+            animate='show'
+            className="
                 flex flex-col w-full xl:max-w-[48%] h-[480px]
-                "
-            >
-                {/* about title of about data */}
-                <div 
-                    className='
+            "
+        >
+            {/* about title of about data */}
+            <div
+                className='
                     flex
                     gap-x-4
                     xl:gap-x-8
                     mx-auto
                     xl:mx-0
                     mb-4
-                    '
-                >
-                    { about.map((item, itemIndex) => {
+                '
+            >
+                {about.map((item, itemIndex) => {
                     return (
                         <div
-                        key={itemIndex}
-                        className={`
-                        cursor-pointer
-                        capitalize
-                        xl:text-lg
-                        relative
-                        after:w-8
-                        after:h-[2px]
-                        after:bg-white
-                        after:absolute
-                        after:-bottom-1
-                        after:left-0
-                        ${index === itemIndex && 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'}
-                        `}
-                        onClick={ () => setIndex(itemIndex) }
+                            key={itemIndex}
+                            className={`
+                            cursor-pointer
+                            capitalize
+                            xl:text-lg
+                            relative
+                            after:w-8
+                            after:h-[2px]
+                            after:bg-white
+                            after:absolute
+                            after:-bottom-1
+                            after:left-0
+                            ${index === itemIndex && 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'}
+                            `}
+                            onClick={() => setIndex(itemIndex)}
                         >
-                        {item.title}
+                            {item.title}
                         </div>
                     )
-                    })}
+                })}
 
-                    {/* about me title , only shows when screen smaller than xl */}
-                    <div
+                {/* about me title , only shows when screen smaller than xl */}
+                <div
                     className={`
                     cursor-pointer
                     capitalize
@@ -110,15 +71,15 @@ const AboutData = () => {
                     xl:hidden
                     ${index === 5 && 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'}
                     `}
-                    onClick={ () => setIndex(5) }
-                    >
-                    About me
-                    </div>
-
+                    onClick={() => setIndex(5)}
+                >
+                    Me
                 </div>
 
-                { index !== 5 && <div
-                    className="
+            </div>
+
+            {index !== 5 && <div
+                className="
                     bg-pink-400/10 
                     py-2 xl:py-6 
                     flex flex-col 
@@ -127,9 +88,9 @@ const AboutData = () => {
                     xl:items-start 
                     rounded-2xl
                     "
-                >
-                    {about[index].info.map((item, itemsIndex) => {
-                        return (
+            >
+                {about[index].info.map((item, itemsIndex) => {
+                    return (
                         <div
                             className="lg:px-5"
                             key={itemsIndex}
@@ -141,7 +102,7 @@ const AboutData = () => {
                             {index !== 0 && <div className="hidden md:inline">-</div>}
                             <div className="inline whitespace-nowrap">{item.stage}</div>
                             {/* {icons} */}
-                            <div 
+                            <div
                                 className={`
                                 grid 
                                 grid-cols-4 
@@ -151,7 +112,7 @@ const AboutData = () => {
                                 {item.icons?.map((icon, iconIndex) => {
                                     return (
                                         <div
-                                            key={iconIndex} 
+                                            key={iconIndex}
                                             className="
                                             col-span-1
                                             border-t-2 
@@ -175,7 +136,7 @@ const AboutData = () => {
                                                 width={30}
                                                 height={30}
                                             />
-                                            <p 
+                                            <p
                                                 className=" 
                                                 group-hover:scale-110
                                                 text-sm 
@@ -187,17 +148,17 @@ const AboutData = () => {
                                             >
                                                 {icon.name}
                                             </p>
-                                            
+
                                         </div>
                                     )
                                 })}
                             </div>
                         </div>)
-                    })}
-                </div>}
-                {/* about me only shown when screen smaller than xl*/}
-                { index === 5 && <div
-                    className="
+                })}
+            </div>}
+            {/* about me only shown when screen smaller than xl*/}
+            {index === 5 && <div
+                className="
                     bg-pink-400/10 
                     py-2 xl:py-6 
                     flex-col 
@@ -208,19 +169,26 @@ const AboutData = () => {
                     rounded-2xl
                     xl:hidden
                     "
-                    >
-                    <div
-                        className="lg:px-5"
-                    >
-                        <div>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus et assumenda doloribus suscipit ea fugiat, facilis corrupti commodi ipsa enim magni architecto accusamus laborum corporis esse magnam placeat sed expedita? Voluptatibus officiis ad cupiditate.
-                        </div>
+            >
+                <div
+                    className="lg:px-5"
+                >
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus et assumenda doloribus suscipit ea fugiat, facilis corrupti commodi ipsa enim magni architecto accusamus laborum corporis esse magnam placeat sed expedita? Voluptatibus officiis ad cupiditate.
                     </div>
-                </div>}
+                    {/* counter */}
+                    <div
+                        className="
+                        flex justify-start mr-12
+                        "
+                    >
+                        <Counter/>
+                    </div>
+                </div>
+            </div>}
 
-            </div>
-        </>
+        </motion.div>
     )
 }
 
-export default AboutData
+export default RightSide
