@@ -99,7 +99,7 @@ const MyDrawer = ({ name, link, video, github, description, tags }:
                                 href={github}
                                 target="_blank"
                             >
-                                Github's source code
+                                Github&apos;s source code
                                 <svg
                                     fill="none"
                                     height="16"
