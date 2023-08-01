@@ -31,10 +31,10 @@ const useRoutes = () => {
             active: pathname === '/about' 
         },
         {
-            label:'Services',
+            label:'Work',
             icon: HiRectangleGroup ,
-            path: '/services',
-            active: pathname === '/services' 
+            path: '/work',
+            active: pathname === '/work' 
         },
         {
             label:'Contact',

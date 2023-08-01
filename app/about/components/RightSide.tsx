@@ -124,8 +124,8 @@ const RightSide = () => {
                                             bg-[linear-gradient(45deg,transparent_25%,black_10%,transparent_75%,transparent_80%)]
                                             bg-[length:250%_250%,100%_100%] 
                                             bg-[position:-100%_0,0_0] 
-                                            bg-no-repeat 
                                             hover:bg-[position:200%_0,0_0] 
+                                            bg-no-repeat 
                                             hover:duration-[1500ms]
                                             "
                                         >
@@ -173,13 +173,15 @@ const RightSide = () => {
                 <div
                     className="lg:px-5"
                 >
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus et assumenda doloribus suscipit ea fugiat, facilis corrupti commodi ipsa enim magni architecto accusamus laborum corporis esse magnam placeat sed expedita? Voluptatibus officiis ad cupiditate.
-                    </div>
+                    <p
+                        className="text-white text-sm text-left ml-1"
+                    >
+                        I am a software developer who has a passion for learning new technologies and solving challenging problems. I am always eager to expand my skills and knowledge by taking online courses, reading books and blogs and building new projects. I am looking for an opportunity to join a dynamic and innovative team where I can contribute to the development of cutting-edge software solutions and grow as a professional.
+                    </p>
                     {/* counter */}
                     <div
                         className="
-                        flex justify-start mr-12
+                        flex justify-start mr-12 ml-1
                         "
                     >
                         <Counter/>

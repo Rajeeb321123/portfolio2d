@@ -14,6 +14,7 @@ const Nav = () => {
                 items-center
                 xl:justify-center
                 gap-y-4
+                
                 fixed
                 h-max
                 bottom-0

@@ -1,12 +1,42 @@
 import ClientOnly from "../components/ClientOnly"
+import PageTransition from "../components/PageTransition"
+import LeftSideWork from "./components/LeftSideWork"
+import RightSideWork from "./components/RightSideWork"
 
 
 const Work = () => {
   return (
-    <ClientOnly image={'url("/bg/work.gif")'}>
-      <div>Work</div>
+    <PageTransition>
+      <ClientOnly image={'url("/bg/work.gif")'} >
+        <div
+          className="
+          h-[90vh]
+          bg-primary/30
+          py-32
+          text-center
+          xl:text-left`
+          "
+        >
+          <div
+          className='
+          container
+          mx-auto
+          h-full
+          flex
+          flex-col
+          items-center
+          xl:flex-row
+          gap-x-6
+          '
+          >
+            <LeftSideWork />
+            <RightSideWork />
+        </div>
 
-    </ClientOnly>
+
+        </div>
+      </ClientOnly>
+    </PageTransition>
   )
 }
 

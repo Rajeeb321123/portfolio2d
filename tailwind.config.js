@@ -67,7 +67,7 @@ module.exports = {
       backgroundImage: {
         explosion: '',
         circles: '',
-        circleStar: 'url("/circle-star.svg")',
+        circleStar: 'url("")',
         site: '',
       },
       animation: {

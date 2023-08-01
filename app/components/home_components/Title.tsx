@@ -52,6 +52,7 @@ const Title = () => {
         xl:mx-0 
         mb-10 
         xl:mb-16
+        text-white
         "
       >
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt

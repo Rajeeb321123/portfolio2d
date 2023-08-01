@@ -6,6 +6,7 @@ import PageTransition from '../components/PageTransition';
 import LeftSide from './components/LeftSide';
 import RightSide from './components/RightSide';
 
+
 const About = () => {
 
 
@@ -15,7 +16,7 @@ const About = () => {
     <ClientOnly image={'url("/bg/about.gif")'} >
       <div
         className='
-        h-full
+        h-[90vh]
         bg-primary/30
         py-32
         text-center
@@ -34,7 +35,6 @@ const About = () => {
           flex-col
           items-center
           xl:flex-row
-          
           gap-x-6
           '
           >

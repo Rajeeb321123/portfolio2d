@@ -25,7 +25,8 @@ const Socials = () => {
       "
     >
       <Link
-        href={''} 
+        href={'https://www.youtube.com/@rajeepthapa5426/videos'}
+        target="_blank" 
         className="
           hover:text-accent
           transtion-all
@@ -36,7 +37,8 @@ const Socials = () => {
         <RiYoutubeLine />
       </Link>
       <Link
-        href={''} 
+        href={'https://www.facebook.com/punk.thapa.1654'}
+        target="_blank"
         className="
           hover:text-accent
           transtion-all
@@ -47,7 +49,8 @@ const Socials = () => {
         <RiFacebookLine />
       </Link>
       <Link
-        href={''} 
+        href={'https://github.com/Rajeeb321123?tab=repositories'}
+        target="_blank"
         className="
           hover:text-accent
           transtion-all
@@ -58,7 +61,8 @@ const Socials = () => {
         <RiGithubLine />
       </Link>
       <Link
-        href={''} 
+        href={'https://www.linkedin.com/in/rajeebchhetri321/'}
+        target="_blank" 
         className="
           hover:text-accent
           transtion-all

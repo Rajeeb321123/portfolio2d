@@ -73,9 +73,10 @@ const LeftSide = () => {
                     xl:mb-2
                     px-2
                     xl:px-0
+                    text-white
                     "
             >
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus et assumenda doloribus suscipit ea fugiat, facilis corrupti commodi ipsa enim magni architecto accusamus laborum corporis esse magnam placeat sed expedita? Voluptatibus officiis ad cupiditate.
+                I am a software developer who has a passion for learning new technologies and solving challenging problems. I am always eager to expand my skills and knowledge by taking online courses, reading books and blogs and building new projects. I am looking for an opportunity to join a dynamic and innovative team where I can contribute to the development of cutting-edge software solutions and grow as a professional.
             </motion.p>
 
             {/* counter */}

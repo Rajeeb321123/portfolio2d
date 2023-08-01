@@ -19,8 +19,7 @@ export default function Home() {
 
       <div
         className="
-        bg-primary/10.
-        h-full
+        h-[90vh]
         "
         >
           {/* text */}

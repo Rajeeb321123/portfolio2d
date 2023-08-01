@@ -12,17 +12,12 @@ interface DesktopItemProps {
 };
 
 
-
 const NavItem: React.FC<DesktopItemProps> = ({
   label,
   icon: Icon,
   href,
   active
 }) => {
-
- 
-
-
   return (
 
     <div
@@ -38,14 +33,12 @@ const NavItem: React.FC<DesktopItemProps> = ({
       `,
       label === 'Home' && 'xl:animate-[wave1_2s_ease-in-out_infinite]  xl:bg-[#d1c49f] xl:rounded-t-full border-2 xl:border-b border-white/20 xl:shadow-sm xl:shadow-[#d1c49f] ',
       label === 'About' && 'xl:animate-[wave2_2s_ease-in-out_infinite] xl:bg-[#2f2e25] border-2 xl:border-t xl:border-b border-white/20 xl:shadow-sm xl:shadow-[#2f2e25]',
-      label === 'Services' && 'xl:animate-[wave3_2s_ease-in-out_infinite] xl:bg-[#909b90] border-2 xl:border-t xl:border-b border-white/20 xl:shadow-sm xl:shadow-[#909b90]',
+      label === 'Work' && 'xl:animate-[wave3_2s_ease-in-out_infinite] xl:bg-[#909b90] border-2 xl:border-t xl:border-b border-white/20 xl:shadow-sm xl:shadow-[#909b90]',
       label === 'Contact' && 'xl:animate-[wave4_2s_ease-in-out_infinite] xl:bg-[#978163] border-2 xl:border-t xl:border-b border-white/20 xl:shadow-sm xl:shadow-[#978163]',
       label === 'Credit' && 'xl:animate-[wave5_2s_ease-in-out_infinite] xl:bg-[#94b977] xl:rounded-b-full border-2 xl:border-t border-white/20 xl:shadow-sm xl:shadow-[#94b977]',
       active && ' '
       )}
     >
-
-
       <Link
         title={label}
         href={href}
