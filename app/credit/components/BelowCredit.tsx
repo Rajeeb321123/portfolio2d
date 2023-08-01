@@ -41,6 +41,7 @@ const BelowCredit = () => {
                 md:text-[30px] 
                 md:leading-[1.3]  
                 font-semibold
+                bg-black/10
   
                 "
                 >
@@ -71,6 +72,7 @@ const BelowCredit = () => {
                 md:text-[30px] 
                 md:leading-[1.3]  
                 font-semibold
+                bg-blue-400/50
                 "
                 >
                 <div className=" inline-block">For his </div>&nbsp;
@@ -79,7 +81,7 @@ const BelowCredit = () => {
                     inline-block
                     "
                     >
-                    arts. His </div>
+                    ARTS. His </div>
                 &nbsp;
                 <a
                     href={'https://kirokazepixel.tumblr.com/'}

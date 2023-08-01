@@ -46,17 +46,25 @@ const Title = () => {
         initial="hidden"
         animate="show"
         className="
-        max-w-sm 
+        max-w-xl 
         xl:max-w-xl 
         mx-auto 
         xl:mx-0 
         mb-10 
         xl:mb-16
         text-white
+        md:w-[420px]
+        rounded-xl
+        bg-gradient-to-b
+        from-blue-600/30
+        via-blue-600/50
+        to-blue-600/30
+        border
+        border-black/50
+        px-3
         "
       >
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt
-        veritatis alias ea delectus natus ab.
+        I develop website using MERN stack and Next.js
       </motion.p>
     </>
   );

@@ -65,6 +65,7 @@ const AboveCredit = () => {
                 md:text-[30px] 
                 md:leading-[1.3]  
                 font-semibold
+                bg-accent/50
                 "
                 >
                 <div className=" inline-block">I hope you</div>&nbsp;

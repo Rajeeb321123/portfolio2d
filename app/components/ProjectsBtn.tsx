@@ -20,7 +20,7 @@ const ProjectsBtn = () => {
       variants={fadeIn('down', 0.4)}
       initial="hidden"
       animate="show"
-      className=" justify-center relative flex lg:justify-start items-end"
+      className=" justify-center relative flex lg:justify-start items-end z-30"
     >
       <div 
         className="mx-auto xl:mx-0"
@@ -68,7 +68,7 @@ const ProjectsBtn = () => {
               />
           <Image 
             alt=""
-            src={`${isHovering ? '/My_Project_Text_Hover.png' : '/My_Project_Text.png' }`}
+            src={`${isHovering ? '/My_Project_Text_Hover1.png' : '/My_Project_Text.png' }`}
             width={100}
             height={100}
             className=" absolute  top-[-25px] w-full h-full max-w-[150px] max-h-[50px]"

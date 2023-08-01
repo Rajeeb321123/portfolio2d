@@ -1,15 +1,14 @@
 'use client';
 
-import {GiMechaHead} from 'react-icons/gi';
-import {motion} from 'framer-motion';
+import {GiRobotGolem} from 'react-icons/gi';
 
-import { fadeIn } from '@/variants';
-const Circle = () => {
+const Mecha_Credit = () => {
   return (
     <>
     <div 
       className="
       w-[200px]
+      text-black
       xl:w-[300px] 
       absolute 
       lg:-right-2 
@@ -17,17 +16,17 @@ const Circle = () => {
       -right-20
       -bottom-10
       animate-[pulse_5s_ease-in-out_infinite]
-      z-0 
+      z-0
       "
-      >
-      <GiMechaHead
-        width={260} 
-        height={200}
-        className="w-full h-full "
+    >
+        <GiRobotGolem
+            width={260} 
+            height={200}
+            className="w-full h-full "
         />
     </div>
     </>
   )
 }
 
-export default Circle
+export default Mecha_Credit

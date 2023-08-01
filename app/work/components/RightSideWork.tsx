@@ -2,14 +2,12 @@
 
 import { fadeIn } from "@/variants";
 import { motion } from "framer-motion";
-import dynamic from 'next/dynamic';
+import WorkSlider from "./WorkSlider";
 
 
 
 const RightSideWork = () => {
-  const WorkSlider = dynamic(() => import('./WorkSlider'), {
-    ssr: false,
-  });
+
   return (
     <motion.div
         className="flex  w-full xl:max-w-[48%] h-[480px] rounded-3xl overflow-hidden"

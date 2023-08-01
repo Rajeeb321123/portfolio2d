@@ -122,7 +122,7 @@ const MyDrawer = ({ name, link, video, github, description, tags }:
                                 href={link}
                                 target="_blank"
                             >
-                                Live Demo
+                                Website Link
                                 <svg
                                     fill="none"
                                     height="16"

@@ -1,6 +1,7 @@
 import ClientOnly from "../components/ClientOnly"
 import PageTransition from "../components/PageTransition"
 import LeftSideWork from "./components/LeftSideWork"
+import Mecha_Work from "./components/Mecha_Work"
 import RightSideWork from "./components/RightSideWork"
 
 
@@ -8,6 +9,8 @@ const Work = () => {
   return (
     <PageTransition>
       <ClientOnly image={'url("/bg/work.gif")'} >
+
+        <Mecha_Work/>
         <div
           className="
           h-[90vh]

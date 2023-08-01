@@ -1,6 +1,7 @@
 import ClientOnly from "../components/ClientOnly";
 import AboveCredit from "./components/AboveCredit";
 import BelowCredit from "./components/BelowCredit";
+import Mecha_Credit from "./components/Mecha_Credit";
 
 const Credit = () => {
     return (
@@ -10,6 +11,7 @@ const Credit = () => {
       h-[90vh]
       '
     >
+      <Mecha_Credit/>
       <div
         className="
         container

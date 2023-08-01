@@ -1,10 +1,8 @@
 'use client';
 
-import {GiMechaHead} from 'react-icons/gi';
-import {motion} from 'framer-motion';
+import {GiMechaMask} from 'react-icons/gi';
 
-import { fadeIn } from '@/variants';
-const Circle = () => {
+const Mecha_Work = () => {
   return (
     <>
     <div 
@@ -18,9 +16,10 @@ const Circle = () => {
       -bottom-10
       animate-[pulse_5s_ease-in-out_infinite]
       z-0 
+      text-black
       "
       >
-      <GiMechaHead
+      <GiMechaMask
         width={260} 
         height={200}
         className="w-full h-full "
@@ -30,4 +29,4 @@ const Circle = () => {
   )
 }
 
-export default Circle
+export default Mecha_Work
