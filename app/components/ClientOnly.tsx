@@ -4,7 +4,6 @@
 // for solving  error framer motion for  next js 13  as dom donot wait unitil the animation due to experimentel app folder in next js 13
 
 import { useState, useEffect, useMemo, useCallback } from 'react';
-import PageTransition from './PageTransition';
 
 interface ClientOnlyProps {
   children: React.ReactNode;

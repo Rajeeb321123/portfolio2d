@@ -75,7 +75,7 @@ const LeftSideWork = () => {
         text-white
         "
       >
-        Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.
+        Following projects in the right handside showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.
         <br />
         <span
           className="text-white font-extrabold p-2 round-xl border bg-pink-400/10 "

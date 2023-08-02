@@ -3,7 +3,7 @@ export const workSlides = {
       {
         name: "Texters",
         description:
-          "Texters is a messenger clone with features like video call, real time text and photo messageing and  and acitve status with the help of Mongodb, WebRTC, Pusher. This is my biggest largest yet",
+          "Texters is a messenger clone with features like video call, real time text and photo messageing group chat and  real time acitve status with the help of Mongodb, WebRTC, Pusher. This is my biggest project, I have done yet",
         tags: [
   
           {
@@ -41,7 +41,7 @@ export const workSlides = {
         image: '/projectCard/texters.png',
         source_code_link: "https://github.com/Rajeeb321123/Texters-messengerClone",
         website_link: "https://Texters.vercel.app/",
-        youtube_link: "https://youtu.be/NyT-cSqOCug",
+        youtube_link: "https://youtu.be/IECqk_MBPCI",
       },
       {
         name: "SunshineFly",
@@ -105,7 +105,7 @@ export const workSlides = {
       {
         name: "My 3d Portfolio",
         description:
-          "My 3d portfolio website using Three js. I ditched the website as mobile device were having hard time loading the 3d assets with high polygons number. So the information shown in this website about myself is Outdate.",
+          "My 3d portfolio website using Three js. I ditched the website as mobile devices were having hard time loading the 3d assets with high polygons number. So the information shown in my 3d portfolio website about myself is outdated.",
         tags: [
           {
             name: "React",
@@ -123,13 +123,13 @@ export const workSlides = {
         image: '/projectCard/3dportfolio.png',
         source_code_link: "https://github.com/Rajeeb321123/portfolio_3d",
         website_link: "https://rajeeb3d.vercel.app/",
-        youtube_link: "https://youtu.be/e-HuBENJKiA",
+        youtube_link: "https://www.youtube.com/watch?v=YRIGqMWAwlU",
       },
 
       {
         name: "Dashboard_Mern_app",
         description:
-          "A comprehensive dashboard web application showing admin products , client and sales .",
+          "A comprehensive dashboard web application showing admin products, client and sales. This app is slow as I am using free tier of render.com for hosting my web application",
         tags: [
           {
             name: "React",

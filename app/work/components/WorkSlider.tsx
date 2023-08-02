@@ -2,11 +2,6 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
-import {
-  BsArrowRight,
-  BsArrowLeft,
-} from 'react-icons/bs';
-import { useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
@@ -14,7 +9,7 @@ import 'swiper/css/navigation';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 
-import Playbtn from './Playbtn';
+
 import { workSlides } from '@/app/hooks/useWork';
 
 const WorkSlider = () => {
