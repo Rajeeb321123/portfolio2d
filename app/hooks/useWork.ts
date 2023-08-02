@@ -82,7 +82,7 @@ export const workSlides = {
       {
         name: "MovieInfo",
         description:
-          "Web application that enables users to get information on any movie and series and its trailer and cast memeber, view trending & popular movie and series sorted by today or week, and highest rated movies and series as well in accordance to tmdb api",
+          "Web application that enables users to get information on any movie and series and its trailer and cast memeber, view trending & popular movie and series sorted by today or week, and highest rated movies and series as well in accordance to tmdb api.",
         tags: [
           {
             name: "react",
@@ -129,7 +129,7 @@ export const workSlides = {
       {
         name: "Dashboard_Mern_app",
         description:
-          "A comprehensive dashboard web application showing admin products, client and sales. This app is slow as I am using free tier of render.com for hosting my web application",
+          "A comprehensive dashboard web application showing admin products, client and sales. This app is slow as I am using free tier of render.com for hosting my web application.",
         tags: [
           {
             name: "React",
