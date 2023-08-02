@@ -3,7 +3,7 @@ export const workSlides = {
       {
         name: "Texters",
         description:
-          "Texters is a messenger clone with features like video call, real time text and photo messaging group chat and real time acitve status with the help of Mongodb, WebRTC, Pusher. This is my biggest project that  I have done yet",
+          "Texters is a messenger clone with features like video call, real time text and photo messaging group chat and real time acitve status with the help of Mongodb, WebRTC, Pusher. This is my biggest project that  I have done yet.",
         tags: [
   
           {
