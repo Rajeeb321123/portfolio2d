@@ -14,6 +14,8 @@ const Form = () => {
     email:'',
     message:'',
   });
+
+  console.log(form);
   // loading when we click send
   const [loading, setLoading] = useState(false);
 
@@ -39,9 +41,9 @@ const Form = () => {
       // parameter along with send
       // we send the sender name, email, message
       {
-        form_name: form.name,
+        from_name: form.name,
         to_name: 'Rajeeb',
-        fom_email: form.email,
+        from_email: form.email,
         to_email: 'starsgazer321@gmail.com',
         message: form.message,
       },
