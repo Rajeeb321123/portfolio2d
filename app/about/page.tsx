@@ -20,6 +20,7 @@ const About = () => {
         bg-primary/30
         py-32
         text-center
+        overflow-y-auto
         xl:text-left
         '
         >
