@@ -22,6 +22,7 @@ const Socials = () => {
       rounded-xl
       border-black
       bg-white/20
+      pointer-events-auto
       "
     >
       <Link

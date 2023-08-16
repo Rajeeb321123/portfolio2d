@@ -17,6 +17,7 @@ const Header = () => {
       xl:px-0
       xl:h-[90px]
       z-[50]
+      pointer-events-none
       "
     >
       <div 
@@ -39,7 +40,7 @@ const Header = () => {
 
 
         {/* logo */}
-        <Link href={'/'} className=' hover:cursor-pointer hover:scale-105'>
+        <Link href={'/'} className=' hover:cursor-pointer pointer-events-auto hover:scale-105'>
           <Image
           className=''
             alt='name'

@@ -25,7 +25,7 @@ const WorkSlider = () => {
           clickable: true,
         }}
         modules={[Pagination, Navigation]}
-        className='w-full h-full]'
+        className='w-full h-full'
       >
 
         {workSlides.slides.map((slide, index) => {
