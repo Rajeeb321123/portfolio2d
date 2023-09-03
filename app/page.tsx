@@ -63,7 +63,7 @@ export default function Home() {
             "
             >
             {/* particles */}
-            <div className="">
+            <div className="hidden md:block">
               <ParticlesContainer />
             </div>
             {/* avatar image */}

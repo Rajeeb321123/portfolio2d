@@ -69,9 +69,9 @@ const useAbout = () => {
               url: '/assets/webdev/scss.png',
             },
             {
-              name: 'Git',
-              url: '/assets/webdev/git.png',
-            },
+              name: 'OpenAI',
+              url: '/assets/webdev/OpenAi.png'
+            }
           ],
         },
         {
@@ -104,6 +104,10 @@ const useAbout = () => {
         {
           title: 'MERN Stack - self learnt',
           stage: '1/9/2022 - present',
+        },
+        {
+          title: 'Moru Digital Wallet Pvt.ltd',
+          stage: '3/9/2023 - present',
         },
         {
           title: 'Next js Developer - self learnt',
