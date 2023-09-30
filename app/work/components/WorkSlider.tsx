@@ -42,7 +42,7 @@ const WorkSlider = () => {
                       src={slide.image}
                       alt='project'
                       fill
-                      className=' group-hover:opacity-100  opacity-100 transition-opacity  xl:opacity-20 hover:opacity-70 border-[5px] bg-gradient-to-r from-pink-500/50 via-red-500/50 to-yellow-500/50 border-white/0  rounded-3xl '
+                      className=' group-hover:opacity-100  opacity-100 transition-opacity  xl:opacity-40 hover:opacity-70 border-[5px] bg-gradient-to-r from-pink-500/50 via-red-500/50 to-yellow-500/50 border-white/0  rounded-3xl '
                       
                     />
                     <div
