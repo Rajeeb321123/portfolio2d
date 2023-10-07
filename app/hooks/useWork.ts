@@ -1,6 +1,61 @@
 export const workSlides = {
     slides: [
       {
+        name: "Moru-AI",
+        description:
+          "This is a independent project that I did during my internship at Moru Digital Wallet Pvt Ltd. This a AI chatbot where we can feed real time data and it has memory of our chat history. This AI chatbot is using Llama2 and OpenAI as large language model, ElevenLabs for Voice, and Pinecone.io (Vector based Database) with MySQL as it's memory",
+        tags: [
+  
+          {
+            name: "Next.js",
+            color: "blue-text-gradient",
+          },
+  
+          {
+            name: "Prisma",
+            color: "green-text-gradient"
+          },
+  
+          {
+            name: "Cloudinary",
+            color: "orange-text-gradient"
+          },
+  
+          {
+            name: "MySQL",
+            color: "text-green-400"
+          },
+          {
+            name: "OpenAI",
+            color: "pink-text-gradient",
+          },
+          {
+            name: "Llama 2",
+            color: "text-red-900",
+          },
+          {
+            name: "Pinecone.io",
+            color: "text-amber-300",
+          },
+          {
+            name: "ElevenLabs",
+            color: "text-red-500",
+          },
+          {
+            name: "Langchain",
+            color: "text-black",
+          },
+          {
+            name: "Upstash-Redis",
+            color: "text-red-500",
+          },
+        ],
+        image: '/projectCard/moru-ai.png',
+        source_code_link: "https://github.com/Rajeeb321123/Moru-ai",
+        // website_link: "https://Texters.vercel.app/",
+        youtube_link: "https://youtu.be/SanWH0cgva0",
+      },
+      {
         name: "Texters",
         description:
           "Texters is a messenger clone with features like video call, real time text and photo messaging group chat and real time acitve status with the help of Mongodb, WebRTC, Pusher. This is my biggest project that  I have done yet.",

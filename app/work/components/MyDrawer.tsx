@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const MyDrawer = ({ name, link, video, github, description, tags }:
     {
-        name: string, description: string, link: string, video: string, github: string, tags: {
+        name: string, description: string, link?: string, video: string, github: string, tags: {
             name: string;
             color: string;
         }[]
@@ -26,10 +26,10 @@ const MyDrawer = ({ name, link, video, github, description, tags }:
             </Drawer.Trigger>
             <Drawer.Portal>
                 <Drawer.Overlay className="fixed inset-0 bg-black/40" />
-                <Drawer.Content className="bg-zinc-100 flex flex-col rounded-t-[10px] mt-24 fixed top-0 bottom-0 left-0 right-0  z-50">
-                    <div className="p-4 bg-white rounded-t-[10px] flex-1">
+                <Drawer.Content className="bg-zinc-100 flex flex-col  rounded-t-[10px] mt-24 fixed top-0 bottom-0 left-0 right-0  z-50">
+                    <div className="p-4 bg-white rounded-t-[10px] flex-1 overflow-y-auto ">
                         <div className="mx-auto w-12 h-1.5 flex-shrink-0 rounded-full bg-zinc-300 mb-8" />
-                        <div className="max-w-md xl:max-w-5xl mx-auto xl:flex xl:items-center xl:justify-center xl:gap-7">
+                        <div className="max-w-md xl:max-w-5xl mx-auto xl:flex xl:items-center xl:justify-center xl:gap-7 ">
 
                             <div className="flex-1 flex flex-col">
                                 <Drawer.Title className="font-bold mb-4">
@@ -92,10 +92,10 @@ const MyDrawer = ({ name, link, video, github, description, tags }:
                             </button>
                         </div>
                     </div>
-                    <div className="p-4 bg-zinc-100 border-t border-zinc-200 mt-auto">
+                    <div className="p-4 bg-zinc-100 border-t border-zinc-200 mt-auto ">
                         <div className="flex gap-6 justify-end max-w-md mx-auto ">
                             <a
-                                className="text-xs cursor-pointer text-zinc-600 flex items-center gap-0.25"
+                                className="text-xs md:text-base transition-all bg-black p-2 rounded-lg hover:scale-110 cursor-pointer text-white flex items-center gap-0.25 "
                                 href={github}
                                 target="_blank"
                             >
@@ -117,8 +117,8 @@ const MyDrawer = ({ name, link, video, github, description, tags }:
                                     <path d="M10 14L21 3"></path>
                                 </svg>
                             </a>
-                            <a
-                                className="text-xs cursor-pointer text-zinc-600 flex items-center gap-0.25"
+                            {link && <a
+                                className="text-xs md:text-base transition-all bg-blue-400 p-2 rounded-lg hover:scale-110 cursor-pointer text-white flex items-center gap-0.25"
                                 href={link}
                                 target="_blank"
                             >
@@ -139,7 +139,7 @@ const MyDrawer = ({ name, link, video, github, description, tags }:
                                     <path d="M15 3h6v6"></path>
                                     <path d="M10 14L21 3"></path>
                                 </svg>
-                            </a>
+                            </a>}
                         </div>
                     </div>
                 </Drawer.Content>

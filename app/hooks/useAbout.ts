@@ -45,6 +45,11 @@ const useAbout = () => {
               url: '/assets/webdev/react.png'
             },
             {
+              name: 'Next.js',
+              url: '/assets/nextjs/next.png',
+            },
+            
+            {
               name: 'Express.js',
               url: '/assets/webdev/express.svg',
             },
@@ -57,61 +62,69 @@ const useAbout = () => {
               url: '/assets/webdev/mongo.svg',
             },
             {
-              name: 'Redux',
-              url: '/assets/webdev/redux.png',
-            },
-            {
-              name: 'Tailwind',
-              url: '/assets/webdev/tailwind.png',
-            },
-            {
-              name: 'SCSS',
-              url: '/assets/webdev/scss.png',
-            },
-            {
-              name: 'OpenAI',
-              url: '/assets/webdev/OpenAi.png'
-            }
-          ],
-        },
-        {
-          title: 'Next.js Full Stack Development',
-          icons: [
-            {
-              name: 'Next.js',
-              url: '/assets/nextjs/next.png',
-            },
-            {
-              name: 'OAuth',
-              url: '/assets/nextjs/auth.png',
+              name: 'MySQL',
+              url: '/assets/webdev/MySQL.png',
             },
             {
               name: 'Prisma',
               url: '/assets/nextjs/prisma.svg',
             },
             {
-              name: 'pusher',
+              name: 'SCSS',
+              url: '/assets/webdev/scss.png',
+            },
+            {
+              name: 'Tailwind',
+              url: '/assets/webdev/tailwind.png',
+            },
+            {
+              name: 'Redux',
+              url: '/assets/webdev/redux.png',
+            },
+            {
+              name: 'scoket.io',
+              url: '/assets/webdev/socket.png',
+            },
+            {
+              name: 'pusher(web socket)',
               url: '/assets/nextjs/pusher.jpg',
+            },
+            
+            
+            {
+              name: 'pinecone-Vector-DataBase',
+              url: '/assets/webdev/pinecone.svg',
+            },
+            {
+              name: 'llama2 AI',
+              url: '/assets/webdev/meta.svg',
+            },
+            {
+              name: 'OpenAI',
+              url: '/assets/webdev/OpenAi.png'
+            },
+            {
+              name: 'OAuth',
+              url: '/assets/nextjs/auth.png',
             },
           ],
         },
-
       ]
     },
     {
       title: 'experience',
       info: [
         {
-          title: 'MERN Stack - self learnt',
-          stage: '1/9/2022 - present',
-        },
-        {
           title: 'Moru Digital Wallet Pvt.ltd',
           stage: '3/9/2023 - present',
         },
         {
-          title: 'Next js Developer - self learnt',
+          title: 'Next js Developer - self taught',
           stage: '1/10/2022 - present',
+        },
+        {
+          title: 'MERN Stack - self taught',
+          stage: '1/9/2022 - present',
         },
       ],
     },
